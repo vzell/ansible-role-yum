@@ -25,6 +25,6 @@
   roles:
     - role: ansible-role-yum
       yum_repository:
-        - { state: "present", name: "docker-ce", baseurl: "https://download.docker.com/linux/centos/docker-ce.repo" }
+        - { state: "present", name: "docker-ce", description: "Docker CE Repository", baseurl: "https://download.docker.com/linux/centos/docker-ce.repo" }
       yum:
         - { state: "latest", name: "docker-ce" }
