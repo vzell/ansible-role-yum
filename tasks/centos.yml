@@ -87,7 +87,7 @@
 - name: yum -y update
   yum:
     name: "*"
-    status: "latest"
+    state: "latest"
     update_cache: "yes"
   tags: yum
 
