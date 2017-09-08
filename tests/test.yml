@@ -31,4 +31,4 @@
           baseurl: "https://dl.iuscommunity.org/pub/ius/stable/CentOS/6/$basearch"
           enabled: "yes"
       yum:
-        - { state: "latest", name: "git2u" }
+        - { state: "latest", name: "ius-release" }
