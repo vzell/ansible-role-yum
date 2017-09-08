@@ -17,13 +17,9 @@
 _yum_repository: []
 _yum: [
   { state: "latest", name: "ca-certificates" },
-  { state: "latest", name: "container-selinux" },
   { state: "latest", name: "curl" },
-  { state: "latest", name: "device-mapper-persistent-data" },
   { state: "latest", name: "epel-release" },
   { state: "latest", name: "htop" },
-  { state: "latest", name: "lvm2" },
-  { state: "latest", name: "systemd-units" },
   { state: "latest", name: "wget" },
   { state: "latest", name: "yum" },
   { state: "latest", name: "yum-utils" },
