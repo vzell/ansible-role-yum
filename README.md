@@ -63,8 +63,15 @@ Example Playbook
     - hosts: all
       roles:
         - role: yum
+          yum_repository:
+            - state: "present"
+              name: "ius"
+              description: "IUS Community Packages for Enterprise Linux {{ ansible_distribution_major_version }} - $basearch"
+              baseurl: "https://dl.iuscommunity.org/pub/ius/stable/CentOS/{{ ansible_distribution_major_version }}/$basearch"
+              gpgcheck: "no"
+              enabled: "yes"
           yum:
-            - { state: "latest", name: "yum-utils" }
+            - { state: "latest", name: "ius-release" }
 
 License
 -------
