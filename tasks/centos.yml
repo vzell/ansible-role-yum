@@ -109,3 +109,12 @@
     validate_certs: "{{ item.validate_certs | default(None) or omit }}"
   with_items: "{{ yum }}"
   tags: yum
+
+- name: flush yum cache
+  file:
+    dest: "{{ item.dest }}"
+    state: "{{ item.state }}"
+  with_items:
+    - { state: "absent", dest: "/var/cache/yum" }
+  changed_when: false
+  tags: yum
