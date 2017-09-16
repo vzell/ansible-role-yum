@@ -14,9 +14,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_yum_repository: []
+_yum_repository: [
+  {
+    file: "CentOS-CR"
+    name: "cr",
+    description: "CentOS-$releasever - cr",
+    baseurl: "http://mirror.centos.org/centos/$releasever/cr/$basearch/",
+    gpgcheck: "yes",
+    gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7",
+    enabled: "yes",
+  },
+]
 _yum: [
   { state: "latest", name: "ca-certificates" },
+  { state: "latest", name: "centos-release" },
+  { state: "latest", name: "centos-release-scl" },
   { state: "latest", name: "curl" },
   { state: "latest", name: "epel-release" },
   { state: "latest", name: "htop" },
