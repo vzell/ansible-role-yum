@@ -15,7 +15,7 @@
 # limitations under the License.
 
 _yum_repository: [
-  { name: "cr", enabled: "yes" },
+  { enabled: "yes", name: "cr", baseurl: "http://mirror.centos.org/centos/$releasever/cr/$basearch/" },
 ]
 _yum: [
   { state: "latest", name: "ca-certificates" },
