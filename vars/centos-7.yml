@@ -15,7 +15,14 @@
 # limitations under the License.
 
 _yum_repository: [
-  { enabled: "yes", name: "cr", baseurl: "http://mirror.centos.org/centos/$releasever/cr/$basearch/" },
+  { 
+    name: "cr",
+    description: "CentOS-$releasever - cr",
+    baseurl: "http://mirror.centos.org/centos/$releasever/cr/$basearch/",
+    gpgcheck: "yes",
+    gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7",
+    enabled: "yes",
+  },
 ]
 _yum: [
   { state: "latest", name: "ca-certificates" },
