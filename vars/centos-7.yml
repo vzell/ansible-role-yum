@@ -14,11 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_yum_repository: []
+_yum_repository: [
+  { name: "cr", enabled: "yes" },
+]
 _yum: [
   { state: "latest", name: "ca-certificates" },
   { state: "latest", name: "centos-release" },
-  { state: "latest", name: "centos-release-cr" },
   { state: "latest", name: "centos-release-scl" },
   { state: "latest", name: "curl" },
   { state: "latest", name: "epel-release" },
