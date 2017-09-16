@@ -16,7 +16,7 @@
 
 _yum_repository: [
   {
-    file: "CentOS-CR"
+    file: "CentOS-CR",
     name: "cr",
     description: "CentOS-$releasever - cr",
     baseurl: "http://mirror.centos.org/centos/$releasever/cr/$basearch/",
