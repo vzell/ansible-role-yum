@@ -33,6 +33,8 @@ _yum: [
   { state: "latest", name: "epel-release" },
   { state: "latest", name: "htop" },
   { state: "latest", name: "initscripts" },
+  { state: "latest", name: "psmisc" },
+  { state: "latest", name: "scl-utils" },
   { state: "latest", name: "wget" },
   { state: "latest", name: "yum" },
   { state: "latest", name: "yum-utils" },
