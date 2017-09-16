@@ -17,6 +17,7 @@
 _yum_repository: []
 _yum: [
   { state: "latest", name: "ca-certificates" },
+  { state: "latest", name: "centos-release" },
   { state: "latest", name: "centos-release-cr" },
   { state: "latest", name: "centos-release-scl" },
   { state: "latest", name: "curl" },
