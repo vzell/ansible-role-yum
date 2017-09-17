@@ -84,13 +84,6 @@
   with_items: "{{ (_yum_repository + yum_repository) | unique }}"
   tags: yum
 
-- name: yum -y update
-  yum:
-    name: "*"
-    state: "latest"
-    update_cache: "yes"
-  tags: yum
-
 - name: yum install
   yum:
     allow_downgrade: "{{ item.allow_downgrade | default(None) or omit }}"
