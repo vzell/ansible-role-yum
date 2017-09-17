@@ -24,9 +24,9 @@ env:
     - DOCKER_IMAGE: 'centos/systemd:latest'
 
 before_install:
-  - service docker stop
-  - echo -e "{\n\"storage-driver\": \"devicemapper\"\n}" | python -m json.tool > /etc/docker/daemon.json
-  - service docker start
+  - sudo service docker stop
+  - sudo echo -e "{\n\"storage-driver\": \"devicemapper\"\n}" | python -m json.tool > /etc/docker/daemon.json
+  - sudo service docker start
   - docker info
   - pip install --upgrade --upgrade-strategy only-if-needed ansible docker docker-compose
   - docker pull $DOCKER_IMAGE
