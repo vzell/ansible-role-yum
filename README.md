@@ -4,6 +4,7 @@ Ansible Role for YUM
 [![Build Status](https://travis-ci.org/alvistack/ansible-role-yum.svg?branch=master)](https://travis-ci.org/alvistack/ansible-role-yum)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/ansible-role-yum.svg)](https://github.com/alvistack/ansible-role-yum)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-yum.svg)](https://github.com/alvistack/ansible-role-yum/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.yum-blue.svg)](https://galaxy.ansible.com/alvistack/yum)
 
 Ansible Role for CentOS YUM Initialization.
 
