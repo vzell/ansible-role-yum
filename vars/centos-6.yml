@@ -25,6 +25,7 @@ _yum: [
   { state: "latest", name: "epel-release" },
   { state: "latest", name: "htop" },
   { state: "latest", name: "psmisc" },
+  { state: "latest", name: "rsync" },
   { state: "latest", name: "scl-utils" },
   { state: "latest", name: "sudo" },
   { state: "latest", name: "unzip" },
