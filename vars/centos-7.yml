@@ -26,6 +26,7 @@ _yum_repository: [
   },
 ]
 _yum: [
+  { state: "latest", name: "bzip2" },
   { state: "latest", name: "ca-certificates" },
   { state: "latest", name: "centos-release" },
   { state: "latest", name: "centos-release-scl" },
@@ -36,8 +37,10 @@ _yum: [
   { state: "latest", name: "psmisc" },
   { state: "latest", name: "scl-utils" },
   { state: "latest", name: "sudo" },
+  { state: "latest", name: "unzip" },
   { state: "latest", name: "vim" },
   { state: "latest", name: "wget" },
   { state: "latest", name: "yum" },
   { state: "latest", name: "yum-utils" },
+  { state: "latest", name: "zip" },
 ]
