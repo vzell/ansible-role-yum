@@ -14,12 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Use `gather_faces: no` to initialize Python on system that not yet
+# pre-installed with Python (e.g. Ubuntu 16.04 Cloud Image and Docker Image).
 - hosts: all
   remote_user: root
   gather_facts: no
   roles:
     - role: ansible-role-python
 
+# Passing list of parameters to yum_repository module.
+# See http://docs.ansible.com/ansible/latest/yum_repository_module.html
 - hosts: all
   remote_user: root
   roles:
@@ -31,5 +35,12 @@
           baseurl: "https://dl.iuscommunity.org/pub/ius/stable/CentOS/{{ ansible_distribution_major_version }}/$basearch"
           gpgcheck: "no"
           enabled: "yes"
+
+# Passing list of parameters to yum module.
+# See http://docs.ansible.com/ansible/latest/yum_module.html
+- hosts: all
+  remote_user: root
+  roles:
+    - role: ansible-role-yum
       yum:
         - { state: "latest", name: "ius-release" }
