@@ -28,7 +28,7 @@ Dependencies
 Example Playbook
 ----------------
 
-[tests/test.yml](test/test.yml)
+[tests/test.yml](tests/test.yml)
 
 License
 -------
