@@ -1,4 +1,4 @@
-Ansible Role for Python
+Ansible Role for YUM
 =======================
 
 1.1.0 - 2017-11-22
