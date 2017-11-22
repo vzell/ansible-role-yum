@@ -50,7 +50,7 @@
         state: "present"
         name: "epel"
         description: "Extra Packages for Enterprise Linux {{ ansible_distribution_major_version }} - $basearch"
-        mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=epel-{{ ansible_distribution_major_version }}&arch=$basearch"
+        metalist: "https://mirrors.fedoraproject.org/metalink?repo=epel-{{ ansible_distribution_major_version }}&arch=$basearch"
         failovermethod: "priority"
         enabled: "yes"
         gpgcheck: "yes"
