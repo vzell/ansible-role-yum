@@ -13,7 +13,7 @@ Requirements
 
 This role require Ansible 2.4 or higher.
 
-This role was designed for RHEL/CentOS 7/6.
+This role was designed for RHEL/CentOS 6/7.
 
 Role Variables
 --------------
