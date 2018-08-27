@@ -11,7 +11,7 @@ Ansible Role for RHEL/CentOS YUM Initialization.
 Requirements
 ------------
 
-This role require Ansible 2.4 or higher.
+This role require Ansible 2.6 or higher.
 
 This role was designed for RHEL/CentOS 6/7.
 

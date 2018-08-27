@@ -4,6 +4,9 @@ Ansible Role for YUM
 1.2.0 - TBC
 -----------
 
+-   Upgrade Ansible support to 2.6 or higher
+-   Keep Yum cache as-is
+
 1.1.0 - 2017-11-23
 ------------------
 
