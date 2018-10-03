@@ -27,7 +27,7 @@ install:
   - ROLE=$(echo $TRAVIS_REPO_SLUG | sed 's/^.*\/ansible-role-/\//g')
   - mkdir -p $ANSIBLE_ROLES_PATH
   - pip install --upgrade --requirement requirements.txt
-  - ln -s `pwd` /etc/ansible/roles/$ROLE
+  - ln -s `pwd` $ANSIBLE_ROLES_PATH/$ROLE
   - ansible-galaxy install --roles-path $ANSIBLE_ROLES_PATH --role-file ansible-role-requirements.yml
 
 before_script:
