@@ -26,21 +26,6 @@
   remote_user: root
   roles:
     - role: yum
-      # Passing list of parameters to yum_repository module.
-      # See http://docs.ansible.com/ansible/latest/yum_repository_module.html
-      yum_repository:
-        - state: "present"
-          name: "epel"
-          description: "Extra Packages for Enterprise Linux {{ ansible_distribution_major_version }} - $basearch"
-          mirrorlist: "https://mirrors.fedoraproject.org/metalink?repo=epel-{{ ansible_distribution_major_version }}&arch=$basearch"
-          failovermethod: "priority"
-          enabled: "yes"
-          gpgcheck: "yes"
-          gpgkey: "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-{{ ansible_distribution_major_version }}"
-      # Passing list of parameters to yum module.
-      # See http://docs.ansible.com/ansible/latest/yum_module.html
-      yum:
-        - { state: "latest", name: "epel-release" }
 
 - hosts: all
   remote_user: root
