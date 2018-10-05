@@ -13,11 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-# Passing list of parameters to yum module.
-# See http://docs.ansible.com/ansible/latest/yum_module.html
-yum: []
-
-# Passing list of parameters to yum_repository module.
-# See http://docs.ansible.com/ansible/latest/yum_repository_module.html
-yum_repository: []
