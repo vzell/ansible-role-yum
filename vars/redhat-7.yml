@@ -51,6 +51,7 @@ _yum: [
   { state: "latest", name: "scl-utils" },
   { state: "latest", name: "screen" },
   { state: "latest", name: "sudo" },
+  { state: "latest", name: "systemd" },
   { state: "latest", name: "telnet" },
   { state: "latest", name: "traceroute" },
   { state: "latest", name: "unzip" },
