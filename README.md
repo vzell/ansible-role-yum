@@ -1,5 +1,4 @@
-Ansible Role for YUM
-====================
+# Ansible Role for YUM
 
 [![Travis](https://img.shields.io/travis/alvistack/ansible-role-yum.svg)](https://travis-ci.org/alvistack/ansible-role-yum)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-yum.svg)](https://github.com/alvistack/ansible-role-yum)
@@ -8,38 +7,31 @@ Ansible Role for YUM
 
 Ansible Role for RHEL/CentOS YUM Initialization.
 
-Requirements
-------------
+## Requirements
 
 This role require Ansible 2.6 or higher.
 
 This role was designed for RHEL/CentOS 6/7.
 
-Role Variables
---------------
+## Role Variables
 
 [defaults/main.yml](defaults/main.yml)
 
-Dependencies
-------------
+## Dependencies
 
 [meta/main.yml](meta/main.yml)
 
-Example Playbook
-----------------
+## Example Playbook
 
 [tests/test.yml](tests/test.yml)
 
-License
--------
+## License
 
--   Code released under [Apache License 2.0](LICENSE)
--   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Code released under [Apache License 2.0](LICENSE)
+  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
-Author Information
-------------------
+## Author Information
 
--   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
-
+  - Wong Hoi Sing Edison
+      - <https://twitter.com/hswong3i>
+      - <https://github.com/hswong3i>
