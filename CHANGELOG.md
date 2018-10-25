@@ -1,10 +1,12 @@
 # Ansible Role for YUM
 
-## 1.2.0 - TBC
+## 2.0.0 - 2018-10-25
 
   - Upgrade Ansible support to 2.6 or higher
-  - Keep Yum cache as-is
-  - Simplify role duty to just handling installation
+  - Support both Ubuntu RHEL/CentOS 6/7
+  - Remove support for optional package installation
+  - Keep YUM cache as-is
+  - Update Travis CI test plan
 
 ## 1.1.0 - 2017-11-23
 
