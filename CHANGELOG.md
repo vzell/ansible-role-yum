@@ -2,6 +2,8 @@
 
 ## 2.0.0 - 2018-10-25
 
+### Major Changes
+
   - Upgrade Ansible support to 2.6 or higher
   - Support both Ubuntu RHEL/CentOS 6/7
   - Remove support for optional package installation
