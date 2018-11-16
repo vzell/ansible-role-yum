@@ -1,6 +1,15 @@
 # Ansible Role for YUM
 
+## 2.1.0 - TBC
+
+## 2.0.1 - 2018-11-16
+
+  - Enable repo before install package
+  - Don't test epel repo with yum\_repository
+
 ## 2.0.0 - 2018-10-25
+
+### Major Changes
 
   - Upgrade Ansible support to 2.6 or higher
   - Support both Ubuntu RHEL/CentOS 6/7
