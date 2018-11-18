@@ -5,6 +5,7 @@
   - Enable repo before install package
   - Don't test epel repo with yum\_repository
   - Ensure python related packages are up-to-date
+  - CI with ansible-lint and galaxy-lint-rules
 
 ## 2.0.0 - 2018-10-25
 
