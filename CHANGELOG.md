@@ -2,6 +2,8 @@
 
 ## 2.1.0 - TBC
 
+### Major Changes
+
   - Enable repo before install package
   - Don't test epel repo with yum\_repository
   - Ensure python related packages are up-to-date
