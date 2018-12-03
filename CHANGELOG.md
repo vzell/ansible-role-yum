@@ -9,6 +9,7 @@
   - Ensure python related packages are up-to-date
   - CI with ansible-lint and galaxy-lint-rules
   - Replace tests from Docker to LXD
+  - Enable EPEL and ELRepo manually
 
 ## 2.0.0 - 2018-10-25
 
