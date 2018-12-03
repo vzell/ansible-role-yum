@@ -10,6 +10,7 @@
   - CI with ansible-lint and galaxy-lint-rules
   - Replace tests from Docker to LXD
   - Enable EPEL and ELRepo manually
+  - Reduce kernel logging level during CI
 
 ## 2.0.0 - 2018-10-25
 
