@@ -44,3 +44,11 @@
   register: result
   until: result is succeeded
   tags: yum
+
+- name: disable yum-plugin-fastestmirror
+  lineinfile:
+    path: "/etc/yum/pluginconf.d/fastestmirror.conf"
+    regexp: "^enabled="
+    line: "enabled=0"
+    state: "present"
+  tags: yum
