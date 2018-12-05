@@ -14,6 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+- name: yum install yum-plugin-fastestmirror
+  yum:
+    name: "yum-plugin-fastestmirror"
+    state: "latest"
+  tags: yum
+
+- name: disable yum-plugin-fastestmirror
+  lineinfile:
+    path: "/etc/yum/pluginconf.d/fastestmirror.conf"
+    regexp: "^enabled="
+    line: "enabled=0"
+    state: "present"
+  tags: yum
+
 - name: rpm --import
   rpm_key:
     key: "{{ item.key }}"
@@ -43,12 +57,4 @@
   with_items: "{{ _yum }}"
   register: result
   until: result is succeeded
-  tags: yum
-
-- name: disable yum-plugin-fastestmirror
-  lineinfile:
-    path: "/etc/yum/pluginconf.d/fastestmirror.conf"
-    regexp: "^enabled="
-    line: "enabled=0"
-    state: "present"
   tags: yum
