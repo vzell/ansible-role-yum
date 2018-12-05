@@ -21,6 +21,7 @@ _yum_repository: []
 _yum: [
   { state: "latest", name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm" },
   { state: "latest", name: "https://www.elrepo.org/elrepo-release-6-8.el6.elrepo.noarch.rpm" },
+  { state: "latest", name: "https://centos6.iuscommunity.org/ius-release.rpm" },
   { state: "latest", name: "yum-plugin-fastestmirror" },
   { state: "latest", name: "bash" },
   { state: "latest", name: "bash-completion" },
