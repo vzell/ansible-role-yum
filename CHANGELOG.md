@@ -1,15 +1,18 @@
 # Ansible Role for YUM
 
-## 2.1.0 - TBC
+## 2.2.0 - TBC
 
 ### Major Changes
 
-  - Enable repo before install package
-  - Don't test epel repo with yum\_repository
+## 2.1.0 - 2018-12-06
+
+### Major Changes
+
+  - CI with yamllint, ansible-lint and ansible-playbook --syntax-check
+  - CI with LXD, improve systemd support
   - Ensure python related packages are up-to-date
-  - CI with ansible-lint and galaxy-lint-rules
-  - Replace tests from Docker to LXD
-  - Enable EPEL and ELRepo manually
+  - Enable EPEL, ELRepo and IUS manually
+  - Disable yum-plugin-fastestmirror which dramatically slow down Ansible
 
 ## 2.0.0 - 2018-10-25
 
