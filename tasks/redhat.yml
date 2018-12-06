@@ -53,7 +53,6 @@
   yum:
     name: "{{ item.name | default(None) or omit }}"
     state: "{{ item.state | default(None) or omit }}"
-    enablerepo: "{{ item.enablerepo | default(None) or omit }}"
   with_items: "{{ _yum }}"
   register: result
   until: result is succeeded
