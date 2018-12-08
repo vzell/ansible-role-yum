@@ -34,7 +34,6 @@ _yum: [
   { state: "latest", name: "coreutils" },
   { state: "latest", name: "curl" },
   { state: "latest", name: "gcc" },
-  { state: "latest", name: "gunzip" },
   { state: "latest", name: "gzip" },
   { state: "latest", name: "htop" },
   { state: "latest", name: "iputils" },
