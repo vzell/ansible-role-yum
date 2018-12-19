@@ -18,6 +18,8 @@
   yum:
     name: "yum-plugin-fastestmirror"
     state: "latest"
+  changed_when: false
+  ignore_errors: yes
   tags: yum
 
 - name: disable yum-plugin-fastestmirror
@@ -26,6 +28,8 @@
     regexp: "^enabled="
     line: "enabled=0"
     state: "present"
+  changed_when: false
+  ignore_errors: yes
   tags: yum
 
 - name: rpm --import
