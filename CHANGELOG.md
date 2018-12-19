@@ -4,6 +4,12 @@
 
 ### Major Changes
 
+  - Allow fail when enable repos with RPM
+
+### CentOS 7
+
+  - Not enable CR Repo
+
 ## 2.1.0 - 2018-12-06
 
 ### Major Changes

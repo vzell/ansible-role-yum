@@ -42,15 +42,14 @@
   tags: yum
 
 - name: yum-config-manager --add-repo
-  yum_repository:
-    file: "{{ item.file | default(None) or omit }}"
+  yum:
     name: "{{ item.name | default(None) or omit }}"
-    description: "{{ item.description | default(None) or omit }}"
-    baseurl: "{{ item.baseurl | default(None) or omit }}"
-    gpgcheck: "{{ item.gpgcheck | default(None) or omit }}"
-    gpgkey: "{{ item.gpgkey | default(None) or omit }}"
-    enabled: "{{ item.enabled | default(None) or omit }}"
+    state: "{{ item.state | default(None) or omit }}"
   with_items: "{{ _yum_repository }}"
+  register: result
+  until: result is succeeded
+  changed_when: false
+  ignore_errors: yes
   tags: yum
 
 - name: yum install

@@ -17,11 +17,12 @@
 _rpm_key: [
   { state: "present", key: "https://www.elrepo.org/RPM-GPG-KEY-elrepo.org" },
 ]
-_yum_repository: []
-_yum: [
+_yum_repository: [
   { state: "latest", name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm" },
   { state: "latest", name: "https://www.elrepo.org/elrepo-release-6-8.el6.elrepo.noarch.rpm" },
   { state: "latest", name: "https://centos6.iuscommunity.org/ius-release.rpm" },
+]
+_yum: [
   { state: "latest", name: "bash" },
   { state: "latest", name: "bash-completion" },
   { state: "latest", name: "bind-utils" },
