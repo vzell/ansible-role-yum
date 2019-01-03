@@ -16,7 +16,6 @@
 
 _yum_repository: [
   { state: "latest", name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm" },
-  { state: "latest", name: "https://centos6.iuscommunity.org/ius-release.rpm" },
 ]
 _yum: [
   { state: "latest", name: "bash" },
