@@ -32,15 +32,6 @@
   ignore_errors: yes
   tags: yum
 
-- name: rpm --import
-  rpm_key:
-    key: "{{ item.key }}"
-    state: "{{ item.state }}"
-  with_items: "{{ _rpm_key }}"
-  register: result
-  until: result is succeeded
-  tags: yum
-
 - name: yum-config-manager --add-repo
   yum:
     name: "{{ item.name | default(None) or omit }}"
