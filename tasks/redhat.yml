@@ -32,6 +32,13 @@
   ignore_errors: yes
   tags: yum
 
+- name: yum-config-manager --enable
+  command: yum-config-manager --{{ item.state }} {{ item.name }}
+  with_items: "{{ _yum_config_manager }}"
+  changed_when: false
+  ignore_errors: yes
+  tags: yum
+
 - name: yum-config-manager --add-repo
   yum:
     name: "{{ item.name | default(None) or omit }}"
